@@ -29,7 +29,7 @@ export const galleryItems = [
     title: 'Freshly Rolled Paneer Tikka Kathi Rolls',
     category: 'rolls-bowls',
     caption: 'Tandoori-marinated paneer with grilled bell peppers rolled inside warm flaky paratha.',
-    image: 'https://images.unsplash.com/photo-1626777553632-482a6136fb52?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1625398407796-82650a8c135f?auto=format&fit=crop&w=1200&q=80',
     tag: 'RTP Express',
   },
   {

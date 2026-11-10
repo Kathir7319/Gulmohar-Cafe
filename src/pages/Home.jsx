@@ -207,7 +207,7 @@ export default function Home({ onAddToCart }) {
             <div>
               <div className="relative h-48 rounded-2xl overflow-hidden mb-5">
                 <img
-                  src="https://images.unsplash.com/photo-1626777553632-482a6136fb52?auto=format&fit=crop&w=700&q=80"
+                  src="https://images.unsplash.com/photo-1625398407796-82650a8c135f?auto=format&fit=crop&w=700&q=80"
                   alt="Quick Lunch Boxes & Wraps (RTP Express)"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
@@ -294,6 +294,11 @@ export default function Home({ onAddToCart }) {
                     <img 
                       src={item.image} 
                       alt={item.name} 
+                      loading="lazy"
+                      onError={(e) => {
+                        e.currentTarget.onerror = null;
+                        e.currentTarget.src = 'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80';
+                      }}
                       className="w-full h-full object-cover"
                     />
                     <div className="absolute top-2.5 left-2.5 flex flex-wrap gap-1">

@@ -110,6 +110,10 @@ export default function Services({ onShowToast }) {
                   <img
                     src={pkg.image}
                     alt={pkg.title}
+                    onError={(e) => {
+                      e.currentTarget.onerror = null;
+                      e.currentTarget.src = 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80';
+                    }}
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute bottom-3 left-3 bg-chai-950/80 backdrop-blur-sm text-white px-3 py-1 rounded-lg text-xs font-bold">
@@ -225,7 +229,7 @@ export default function Services({ onShowToast }) {
 
             <div className="relative rounded-2xl overflow-hidden shadow-lg h-64 sm:h-80">
               <img
-                src="https://images.unsplash.com/photo-1517649763962-0c623266ddc0?auto=format&fit=crop&w=900&q=80"
+                src="https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?auto=format&fit=crop&w=900&q=80"
                 alt="NetSports Sports Event Catering"
                 className="w-full h-full object-cover"
               />

@@ -62,7 +62,7 @@ export const menuItems = [
     spiceLevel: 3,
     calories: '380 kcal',
     popular: true,
-    image: 'https://images.unsplash.com/photo-1626777553632-482a6136fb52?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1626132647523-66f5bf380027?auto=format&fit=crop&w=800&q=80',
   },
   {
     id: 'dahi-puri',
@@ -106,7 +106,7 @@ export const menuItems = [
     spiceLevel: 2,
     calories: '480 kcal',
     popular: true,
-    image: 'https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1625398407796-82650a8c135f?auto=format&fit=crop&w=800&q=80',
   },
   {
     id: 'chicken-tikka-kathi-roll',
@@ -120,7 +120,7 @@ export const menuItems = [
     spiceLevel: 2,
     calories: '520 kcal',
     popular: true,
-    image: 'https://images.unsplash.com/photo-1626777553632-482a6136fb52?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=800&q=80',
   },
   {
     id: 'daily-curry-rice-bowl',

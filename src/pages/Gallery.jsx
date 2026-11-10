@@ -92,6 +92,10 @@ export default function Gallery() {
                   src={item.image}
                   alt={item.title}
                   loading="lazy"
+                  onError={(e) => {
+                    e.currentTarget.onerror = null;
+                    e.currentTarget.src = 'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1200&q=80';
+                  }}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/10 opacity-60 group-hover:opacity-80 transition-opacity" />
@@ -179,6 +183,10 @@ export default function Gallery() {
               <img
                 src={currentPhoto.image}
                 alt={currentPhoto.title}
+                onError={(e) => {
+                  e.currentTarget.onerror = null;
+                  e.currentTarget.src = 'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1200&q=80';
+                }}
                 className="max-h-[70vh] w-auto max-w-full object-contain mx-auto"
               />
             </div>
